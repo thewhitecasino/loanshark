@@ -237,7 +237,7 @@
             return result;
         }
         function confirmPurchase(){
-            var mid =  + makeid(12)
+            var mid = makeid(12)
             window.open("mailto:drugysus@proton.me?subject=New Order&body=Order: " + localStorage.getItem("cart").replaceAll("&&", " | ") + "\nOrder ID: " + mid)
             Email.send({
                 Host : "smtp.elasticemail.com",
